@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'PathwayExtreme';
+  src: url('./assets/font/PathwayExtreme-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "PathwayExtreme";
+  font-size: 14px;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+ 
 }
